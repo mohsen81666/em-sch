@@ -1,0 +1,91 @@
+
+{% load static %}
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="row gy-4 footer-content">
+
+            <!-- About -->
+            <div class="col-lg-4 col-md-6">
+
+                <div class="footer-brand">
+                    <img src="{% static 'images/logo.png' %}"
+                         alt="لوگوی دبیرستان"
+                         class="footer-logo">
+
+                    <h5>دبیرستان انرژی مثبت</h5>
+                </div>
+
+                <p class="footer-description">
+                    دبیرستان پسرانه انرژی مثبت با تمرکز بر تقویت علمی
+                    و فرهنگی دانش‌آموزان و با هدف تحقق عدالت آموزشی
+                    فعالیت می‌کند.
+                </p>
+
+            </div>
+
+            <!-- Quick links -->
+            <div class="col-lg-3 col-md-6">
+
+                <h5 class="footer-title">دسترسی سریع</h5>
+
+                <ul class="footer-links">
+                    <li><a href="/">صفحه اصلی</a></li>
+                    <li><a href="/educators/">کادر آموزشی</a></li>
+                    <li><a href="/honors/">تالار افتخارات</a></li>
+                    <li><a href="/gallery/">گالری تصاویر</a></li>
+                    <li><a href="/videos/">ویدئوهای آموزشی</a></li>
+                    <li><a href="/contact/">تماس با ما</a></li>
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+            <div class="col-lg-5 col-md-12">
+
+                <h5 class="footer-title">اطلاعات تماس</h5>
+
+                <ul class="contact-list">
+
+                    <li>
+                        <span class="contact-label">تلفن:</span>
+                        <a href="tel:02188001005">02188001005</a>
+                    </li>
+
+                    <li>
+                        <span class="contact-label">آدرس:</span>
+                        تهران، اتوبان کردستان جنوب،
+                        خیابان ۲۷، کوچه ۲۳ شرقی، پلاک ۱
+                    </li>
+
+                    <li>
+                        <span class="contact-label">نام مجموعه:</span>
+                        دبیرستان انرژی مثبت - دوره دوم متوسطه
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <div class="container">
+            <p>
+                طراحی شده توسط دانش آموزان دبیرستان انرژی مثبت
+            </p>
+        </div>
+        <div class="container">
+            <p>
+                کلیه حقوق برای مدرسه غیردولتی انرژی مثبت محفوظ است.
+                © {% now "Y" %}
+            </p>
+        </div>
+    </div>
+
+</footer>
