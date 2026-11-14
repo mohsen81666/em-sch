@@ -27,6 +27,11 @@ body {
     font-family: Vazirmatn, sans-serif !important;
     color: var(--text);
     background: var(--light-bg);
+    background-image: url("../images/Bg10.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     line-height: 1.8;
 }
 
@@ -122,20 +127,20 @@ a {
 
 /* Registration button */
 
-/* .btn-register {
+.buttons {
     background: var(--accent);
-    color: #fff;
+    color: var(--text-light);
     border: 1px solid var(--accent);
     padding: 9px 24px;
     border-radius: 5px;
     font-size: 14px;
 }
 
-.btn-register:hover {
+.buttons:hover {
     background: var(--primary);
     border-color: var(--primary);
-    color: #fff;
-} */
+    color: var(--text-light);
+}
 
 /* --------------------------------
    Footer
@@ -228,6 +233,133 @@ a {
 }
 
 /* --------------------------------
+   Home page
+-------------------------------- */
+
+.DakheleJabe {
+    background-color: #dfdfe2;
+    border: 5px solid #32338d;
+    padding: 30px;
+}
+
+.BorderJabe {
+   background-color: rgb(68, 68, 156); padding: 10px; border: 5px solid #32338d
+}
+
+.Dokme {
+    display: inline-block;
+    background-color: #32338d;
+    color: white;
+    padding: 20px 100px;
+    border-radius: 15px;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.Dokme:hover {
+    transform: scale(1.1);
+}
+
+.GuzCharb1 {
+    background-color: rgb(68, 68, 156);
+    padding: 10px;
+    border: 5px solid #32338d;
+    border-radius: 20px;
+}
+
+.GuzCharb2 {
+    background-color: #dfdfe2;
+    border: 5px solid #32338d;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.SchoolMainImage {
+    display: block;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.SchoolMainText {
+    padding: 35px;
+    text-align: right;
+}
+
+.SchoolMainText .Dokme {
+    width: fit-content;
+}
+
+
+
+.text-frame {
+    background-color: #3135a1;
+    padding: 80px 12%;
+}
+
+.text-box {
+    background-color: rgb(255, 255, 255);
+    border: 5px solid black;
+    padding: 40px;
+    min-height: 500px;
+}
+
+.AksDorost {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* قاب گالری */
+.gallery-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* انیمیشن عکس */
+.gallery-slider img {
+    display: block;
+    width: 100%;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-slider img.fade-out {
+    opacity: 0;
+}
+
+/* فلش‌های گالری */
+.gallery-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 28px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 2;
+}
+
+.gallery-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.gallery-right {
+    right: 15px;
+}
+
+.gallery-left {
+    left: 15px;
+}
+
+
+/* --------------------------------
    Responsive
 -------------------------------- */
 
@@ -255,6 +387,16 @@ a {
         text-align: center;
     }
 
+}
+
+@media (max-width: 768px) {
+    .text-frame {
+        padding: 25px 15px;
+    }
+
+    .text-box {
+        padding: 20px;
+    }
 }
 
 @media (max-width: 575.98px) {
