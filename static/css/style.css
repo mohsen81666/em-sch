@@ -18,8 +18,13 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: Vazirmatn;
+    src: url('../fonts//Vazirmatn.ttf');
+}
+
 body {
-    font-family: Tahoma, Arial, sans-serif;
+    font-family: Vazirmatn, sans-serif !important;
     color: var(--text);
     background: var(--light-bg);
     line-height: 1.8;
