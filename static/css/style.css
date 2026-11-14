@@ -360,6 +360,62 @@ a {
 
 
 /* --------------------------------
+   Educators page
+-------------------------------- */
+
+.educators-section {
+    padding: 50px 0;
+    direction: rtl;
+}
+
+.educators-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.educators-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.educator-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.educator-card:hover {
+    transform: translateY(-7px);
+}
+
+.educator-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    background-color: #f5f5f5;
+}
+
+.educator-info {
+    padding: 20px;
+}
+
+.educator-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.educator-info p {
+    color: #777;
+    font-size: 15px;
+}
+
+/* --------------------------------
    Gallery page
 -------------------------------- */
 
@@ -451,7 +507,6 @@ a {
         display: block;
         text-align: center;
     }
-
 }
 
 @media (max-width: 768px) {
@@ -461,6 +516,10 @@ a {
 
     .text-box {
         padding: 20px;
+    }
+
+    .educators-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -487,4 +546,7 @@ a {
         padding-bottom: 30px;
     }
 
+    .educators-grid {
+        grid-template-columns: 1fr;
+    }
 }
