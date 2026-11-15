@@ -1,4 +1,3 @@
-
 {% extends "base.html" %}
 
 {% load static %}
@@ -9,33 +8,21 @@
 
 {% block content %}
 
-<section class="container py-5">
+<div class="container py-5">
 
-    <div class="row align-items-center g-4">
+    <div class="honor-btn">رتبه‌های برتر کنکور سراسری ۱۴۰۵</div>
 
-        <div class="col-lg-6">
-            <img src="{% static 'images/school.jpg' %}"
-                class="img-fluid rounded-3"
-                alt="دبیرستان انرژی مثبت">
-        </div>
+    <img src="{% static 'images/honors.jpg' %}" alt="رتبه‌های برتر دبیرستان انرژی مثبت در کنکور" class="honor-img">
 
-        <div class="col-lg-6">
-            <h2 class="mb-4">دبیرستان انرژی مثبت</h2>
+    <div class="honor-btn">مدال‌های المپیادهای علمی کشوری</div>
 
-            <p>
-                دبیرستان پسرانه انرژی مثبت در سال ۱۳۹۷
-                با همکاری تعدادی از معاونین و دبیران
-                دبیرستان انرژی اتمی تأسیس شد.
-            </p>
-
-            <p>
-                این مجموعه با تمرکز بر تقویت علمی و فرهنگی
-                دانش‌آموزان فعالیت می‌کند.
-            </p>
-        </div>
-
+    <div class="medal-row">
+        <img src="{% static 'images/bronze.jpg' %}" alt="برنز: ۴">
+        <img src="{% static 'images/silver.jpg' %}" alt="نقره: ۲">
     </div>
 
-</section>
+    <img src="{% static 'images/olympiad.jpg' %}" alt="مدال آوران المپیادهای" class="olympiad-img">
+
+</div>
 
 {% endblock %}

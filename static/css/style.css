@@ -414,6 +414,51 @@ a {
 }
 
 /* --------------------------------
+   Honors page
+-------------------------------- */
+
+.honor-btn {
+    display: block;
+    background-color: #5b9bd5;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    margin: 12px auto;
+    border-radius: 50px;
+    max-width: 900px;
+}
+
+.honor-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 30px auto;
+}
+
+.medal-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 30px auto;
+}
+
+.medal-row img {
+    max-width: 280px;
+    width: 100%;
+    height: auto;
+}
+
+.olympiad.jpg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 30px auto;
+}
+
+/* --------------------------------
    Gallery page
 -------------------------------- */
 
